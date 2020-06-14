@@ -1,28 +1,34 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" class="pt-4">
+    <div class="">
+      <EventDemo></EventDemo>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import EventDemo from './components/EventDemo'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    EventDemo
+  },
+  methods: {
+
+  },
+  created() {
+    console.log(this.$route)
   }
+
 }
 </script>
 
 <style>
+@import "~bootstrap/dist/css/bootstrap.min.css";
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  height: 100%;
+  width: 100%;
 }
 </style>
