@@ -27,6 +27,18 @@
     {
       id: 'kyj_uat', configs: [1, 2, 3]
     },
+    {
+      id: 'tcsa07', configs: [1, 3]
+    },
+    {
+      id: 'tcsa12', configs: [1, 2]
+    },
+    {
+      id: 'tcsa17', configs: [1]
+    },
+    {
+      id: 'tcsa22', configs: []
+    },
   ];
 
   export default {

@@ -41,7 +41,7 @@
     },
     methods: {
       onCLickDelete() {
-        console.log('aaa')
+        this.$emit('delete')
       },
     }
   }

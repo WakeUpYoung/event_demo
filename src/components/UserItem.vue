@@ -1,11 +1,18 @@
 <template>
   <div @click="detailShow=!detailShow" class="custom-list-item">
+    <b-modal size="lg" hide-footer v-model="historyModalShow" :title="userId + ' History'">
+      <div>
+        <b-table :items="historyItems" striped hover></b-table>
+      </div>
+    </b-modal>
     <div class="row">
       <div class="col align-center">
         <span>{{ userId }}</span>
       </div>
       <div class="col">
-        <b-button @click.stop class="float-right" size="sm" variant="info"><b-icon icon="clock-history" class="mr-2"></b-icon>History</b-button>
+        <b-button @click.stop="historyModalShow=true" class="float-right" size="sm" variant="info">
+          <b-icon icon="clock-history" class="mr-2"></b-icon>History
+        </b-button>
       </div>
     </div>
     <div class="mt-1" @click.stop>
@@ -43,6 +50,11 @@
       return {
         detailShow: false,
         configs: [],
+        historyModalShow: false,
+        historyItems: [
+          {operationBy: 'kyj_uat', operationDate: '06/10/2020 10:00:03', description: 'Unlink Config_1 For VIP'},
+          {operationBy: 'kyj_uat', operationDate: '06/10/2020 10:00:03', description: 'Link Config_1 For VIP'}
+        ]
       }
     }, // data
 
