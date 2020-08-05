@@ -2,6 +2,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 import {BootstrapVue, BootstrapVueIcons } from 'bootstrap-vue'
+import 'bootstrap-vue/dist/bootstrap-vue-icons.min.css'
 import VueSlider from 'vue-slider-component'
 import 'vue-slider-component/theme/default.css'
 import router from './router'

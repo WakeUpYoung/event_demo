@@ -5,6 +5,7 @@
         <b-nav pills vertical justified>
           <b-nav-item :active="$route.name==='eventConfigurations'" @click="toRoute('eventConfigurations')">Event Configurations</b-nav-item>
           <b-nav-item :active="$route.name==='linkToUser'" @click="toRoute('linkToUser')">Link to User</b-nav-item>
+          <b-nav-item :active="$route.name==='inputTest'" @click="toRoute('inputTest')">Input Test</b-nav-item>
         </b-nav>
       </div>
       <div class="col-10">

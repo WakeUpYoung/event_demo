@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import EventConfigurations from "./components/EventConfigurations";
 import LinkToUser from "./components/LinkToUser";
+import InputTest from "./components/InputTest";
 
 Vue.use(VueRouter);
 
@@ -16,6 +17,11 @@ const routes = [
       component: LinkToUser,
       name: 'linkToUser'
     },
+    {
+      path: '/inputtest',
+      component: InputTest,
+      name: 'inputTest'
+    },
 ];
 
 const router = new VueRouter({
@@ -24,5 +30,3 @@ const router = new VueRouter({
 });
 
 export default router
-
-
